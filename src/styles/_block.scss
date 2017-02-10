@@ -1,0 +1,52 @@
+@import './util.scss';
+//常用css块
+.aBlock{
+    display: block;
+    width: 100px;
+    height:80px;
+    margin:2px 0;
+}
+
+//高度100%
+.outerHeight{
+    position: fixed;
+    height: 100vh;
+}
+
+//block 上下垂直居中
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+//分割线
+.splitLine{
+  position:relative;
+  text-align:center;
+  display: block;
+}
+.splitLine:before, .splitLine:after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  position: absolute;
+  top: 50%; 
+}
+.splitLine:before {
+  background: -webkit-linear-gradient(left,$red, $redSide , $blankSide); 
+  background: -o-linear-gradient(left,$red, $redSide , $blankSide); 
+  background: -moz-linear-gradient(left,$red,$redSide , $blankSide);
+  background: linear-gradient(to left,$red, $redSide , $blankSide); 
+  left: 2px;
+}
+.splitLine:after {
+  background: -webkit-linear-gradient(right,$red, $redSide , $blankSide); 
+  background: -o-linear-gradient(right,$red, $redSide , $blankSide); 
+  background: -moz-linear-gradient(right,$red,$redSide , $blankSide);
+  background: linear-gradient(to right,$red, $redSide , $blankSide); 
+  right: 2px;
+}
+
+//动画
+
