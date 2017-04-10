@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
 import routes from './router'
+import Axios from 'axios'
 // use
 Vue.use(VueRouter)
+Vue.prototype.$http = Axios
 /* eslint-disable no-new */
 const router = new VueRouter({
   mode: 'history',

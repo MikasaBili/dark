@@ -1,5 +1,6 @@
 import Login from './components/login'
 import empty from './components/default'
+import success from './components/success'
 export default [
   {
     path: '/login',
@@ -8,5 +9,9 @@ export default [
   {
     path: '/',
     component: empty
+  },
+  {
+    path: '/success',
+    component: success
   }
 ]
